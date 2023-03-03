@@ -7,7 +7,9 @@
   #  3
    # -> 1
 
-n = int(input())
-a = map(int, input().split())
-x = int(input())
-print(sum(map(lambda z: int(z == x), a)))
+n = int(input('Введите количество элементов в массиве: '))
+x = input('введите число: ')
+import random
+A = [random.randint(1, n) for _ in range(n)]
+print(*A)
+print(A.count(int(x)))
